@@ -1,5 +1,5 @@
 {
-  "name": "Scaffold-ETH 2 DApp",
-  "description": "A DApp built with Scaffold-ETH",
-  "iconPath": "logo.svg"
+  "name": "OutcomePay AI",
+  "description": "Verified settlement for AI agents buying onchain work on Arbitrum.",
+  "iconPath": "op-logo.png"
 }

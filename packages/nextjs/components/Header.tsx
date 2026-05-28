@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Bars3Icon } from "@heroicons/react/24/outline";
@@ -80,9 +81,7 @@ export const Header = () => {
           </ul>
         </details>
         <Link href="/" passHref className="hidden lg:flex items-center gap-2 ml-4 mr-6 shrink-0">
-          <div className="flex h-10 w-10 items-center justify-center bg-[#23665a] text-sm font-black text-white">
-            OP
-          </div>
+          <Image src="/op-logo.png" alt="OutcomePay AI" width={44} height={44} className="object-contain" priority />
           <div className="flex flex-col">
             <span className="font-bold leading-tight">OutcomePay AI</span>
             <span className="text-xs">Verified agent settlement</span>
