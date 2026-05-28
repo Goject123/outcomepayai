@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { Address } from "@scaffold-ui/components";
-import { formatUnits, keccak256, stringToHex } from "viem";
+import { Address as AddressType, formatUnits, isAddress, keccak256, stringToHex } from "viem";
 import { useAccount } from "wagmi";
 import {
   ArrowPathIcon,
@@ -220,7 +220,7 @@ export const OutcomePayDemo = () => {
 
   const createSettlement = async () => {
     const selectedProvider = providerAddress || connectedAddress;
-    if (!selectedProvider) {
+    if (!selectedProvider || !isAddress(selectedProvider)) {
       notification.error("Connect a wallet or enter a Provider Agent address");
       return;
     }
@@ -231,7 +231,7 @@ export const OutcomePayDemo = () => {
     const deadline = BigInt(Math.floor(Date.now() / 1000) + 60 * 60);
     await writeEscrowAsync({
       functionName: "createSettlement",
-      args: [selectedProvider, mockUSDC.address, DEMO_AMOUNT, deadline, intentHash],
+      args: [selectedProvider as AddressType, mockUSDC.address, DEMO_AMOUNT, deadline, intentHash],
     });
     setGuidedStep("fund");
   };
