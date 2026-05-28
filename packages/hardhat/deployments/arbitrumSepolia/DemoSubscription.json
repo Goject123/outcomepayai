@@ -1,0 +1,166 @@
+{
+  "address": "0x86089f6fac227ed6eba0e71097ae6bf3d49fb11f",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_owner",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_planPrice",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "_planName",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "planPrice",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "planName",
+          "type": "string"
+        }
+      ],
+      "name": "PlanConfigured",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "planName",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "planPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "contractName": "DemoSubscription",
+  "sourceName": "contracts/DemoSubscription.sol",
+  "bytecode": "0x60c060405234801561000f575f5ffd5b5060405161057438038061057483398101604081905261002e91610105565b6001600160a01b0383166100885760405162461bcd60e51b815260206004820152601560248201527f4f776e6572206973207a65726f20616464726573730000000000000000000000604482015260640160405180910390fd5b6001600160a01b03831660805260a08290525f6100a58282610260565b50826001600160a01b03167f5ba3036214a27a624441b113fe551f76ee344774d66160d5edef615974c93b7c83836040516100e192919061031a565b60405180910390a2505050610356565b634e487b7160e01b5f52604160045260245ffd5b5f5f5f60608486031215610117575f5ffd5b83516001600160a01b038116811461012d575f5ffd5b6020850151604086015191945092506001600160401b0381111561014f575f5ffd5b8401601f8101861361015f575f5ffd5b80516001600160401b03811115610178576101786100f1565b604051601f8201601f19908116603f011681016001600160401b03811182821017156101a6576101a66100f1565b6040528181528282016020018810156101bd575f5ffd5b8160208401602083015e5f602083830101528093505050509250925092565b600181811c908216806101f057607f821691505b60208210810361020e57634e487b7160e01b5f52602260045260245ffd5b50919050565b601f82111561025b57805f5260205f20601f840160051c810160208510156102395750805b601f840160051c820191505b81811015610258575f8155600101610245565b50505b505050565b81516001600160401b03811115610279576102796100f1565b61028d8161028784546101dc565b84610214565b6020601f8211600181146102bf575f83156102a85750848201515b5f19600385901b1c1916600184901b178455610258565b5f84815260208120601f198516915b828110156102ee57878501518255602094850194600190920191016102ce565b508482101561030b57868401515f19600387901b60f8161c191681555b50505050600190811b01905550565b828152604060208201525f82518060408401528060208501606085015e5f606082850101526060601f19601f8301168401019150509392505050565b60805160a0516101ff6103755f395f604801525f608201526101ff5ff3fe608060405234801561000f575f5ffd5b506004361061003f575f3560e01c806342218aaa146100435780638da5cb5b1461007d578063f7ce53e8146100bc575b5f5ffd5b61006a7f000000000000000000000000000000000000000000000000000000000000000081565b6040519081526020015b60405180910390f35b6100a47f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b039091168152602001610074565b6100c46100d1565b604051610074919061015c565b5f80546100dd90610191565b80601f016020809104026020016040519081016040528092919081815260200182805461010990610191565b80156101545780601f1061012b57610100808354040283529160200191610154565b820191905f5260205f20905b81548152906001019060200180831161013757829003601f168201915b505050505081565b602081525f82518060208401528060208501604085015e5f604082850101526040601f19601f83011684010191505092915050565b600181811c908216806101a557607f821691505b6020821081036101c357634e487b7160e01b5f52602260045260245ffd5b5091905056fea2646970667358221220e36487398bba802abe352205cebde40d40c789f52f286c325884dc5e94fcce1564736f6c634300081e0033",
+  "deployedBytecode": "0x608060405234801561000f575f5ffd5b506004361061003f575f3560e01c806342218aaa146100435780638da5cb5b1461007d578063f7ce53e8146100bc575b5f5ffd5b61006a7f000000000000000000000000000000000000000000000000000000000000000081565b6040519081526020015b60405180910390f35b6100a47f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b039091168152602001610074565b6100c46100d1565b604051610074919061015c565b5f80546100dd90610191565b80601f016020809104026020016040519081016040528092919081815260200182805461010990610191565b80156101545780601f1061012b57610100808354040283529160200191610154565b820191905f5260205f20905b81548152906001019060200180831161013757829003601f168201915b505050505081565b602081525f82518060208401528060208501604085015e5f604082850101526040601f19601f83011684010191505092915050565b600181811c908216806101a557607f821691505b6020821081036101c357634e487b7160e01b5f52602260045260245ffd5b5091905056fea2646970667358221220e36487398bba802abe352205cebde40d40c789f52f286c325884dc5e94fcce1564736f6c634300081e0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {},
+  "immutableReferences": {
+    "2117": [
+      {
+        "length": 32,
+        "start": 130
+      }
+    ],
+    "2119": [
+      {
+        "length": 32,
+        "start": 72
+      }
+    ]
+  },
+  "inputSourceName": "project/contracts/DemoSubscription.sol",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "evm": {
+    "gasEstimates": {
+      "creation": {
+        "codeDepositCost": "102200",
+        "executionCost": "infinite",
+        "totalCost": "infinite"
+      },
+      "external": {
+        "owner()": "infinite",
+        "planName()": "infinite",
+        "planPrice()": "infinite"
+      }
+    }
+  },
+  "metadata": "{\"compiler\":{\"version\":\"0.8.30+commit.73712a01\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_owner\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_planPrice\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"_planName\",\"type\":\"string\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"planPrice\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"planName\",\"type\":\"string\"}],\"name\":\"PlanConfigured\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"planName\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"planPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project/contracts/DemoSubscription.sol\":\"DemoSubscription\"},\"evmVersion\":\"prague\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\"project/:@openzeppelin/contracts/=npm/@openzeppelin/contracts@5.0.2/\"]},\"sources\":{\"project/contracts/DemoSubscription.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity >=0.8.24 <0.9.0;\\n\\ncontract DemoSubscription {\\n    address public immutable owner;\\n    uint256 public immutable planPrice;\\n    string public planName;\\n\\n    event PlanConfigured(address indexed owner, uint256 planPrice, string planName);\\n\\n    constructor(address _owner, uint256 _planPrice, string memory _planName) {\\n        require(_owner != address(0), \\\"Owner is zero address\\\");\\n\\n        owner = _owner;\\n        planPrice = _planPrice;\\n        planName = _planName;\\n\\n        emit PlanConfigured(_owner, _planPrice, _planName);\\n    }\\n}\\n\",\"keccak256\":\"0x306c4fa8176c47cf2af57a22d56fe81c3df9e2d4dd60e0c64a5c9189af3fe006\",\"license\":\"MIT\"}},\"version\":1}",
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 2121,
+        "contract": "project/contracts/DemoSubscription.sol:DemoSubscription",
+        "label": "planName",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_string_storage"
+      }
+    ],
+    "types": {
+      "t_string_storage": {
+        "encoding": "bytes",
+        "label": "string",
+        "numberOfBytes": "32"
+      }
+    }
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "argsData": "0x000000000000000000000000d78192db1ebf457014a3c9ac1ae59c242244589c00000000000000000000000000000000000000000000000000000000009896800000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000001c4f7574636f6d655061792044656d6f20537562736372697074696f6e00000000",
+  "transaction": {
+    "hash": "0x10bba49a6cb99fa6eb4af975a540f2762d71ac921a9ec92f8651c6d70dba8b44",
+    "nonce": "0x2",
+    "origin": "0xd78192db1ebf457014a3c9ac1ae59c242244589c"
+  },
+  "receipt": {
+    "blockHash": "0x952ac5af259ecbc1236cfd9d8d568ad4e046e3bbdf3fac884e6b487a5de1508d",
+    "blockNumber": "0x102efa4f",
+    "transactionIndex": "0x1"
+  }
+}
